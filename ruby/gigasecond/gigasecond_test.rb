@@ -11,7 +11,6 @@ class GigasecondTest < Minitest::Test
   end
 
   def test_1977_06_13
-    skip
     gs = Gigasecond.from(Time.utc(1977, 6, 13, 0, 0, 0))
     assert_equal Time.utc(2009, 2, 19, 1, 46, 40), gs
   end
